@@ -26,7 +26,13 @@
     "validate.io",
     "validate",
     "validation",
-    "validator"
+    "validator",
+    "valid",
+    "string",
+    "primitive",
+    "is",
+    "isstring",
+    "isprimitive"
   ],
   "bugs": {
     "url": "https://github.com/validate-io/string-primitive/issues"

@@ -1,4 +1,4 @@
-string-primitive
+String Primitive
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
@@ -17,18 +17,34 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 ## Usage
 
 ``` javascript
-var foo = require( 'validate.io-string-primitive' );
+var isString = require( 'validate.io-string-primitive' );
 ```
 
-#### foo( value )
+#### isString( value )
 
-What does this function do?
+Validates if a `value` is a `string` primitive.
+
+``` javascript
+var value = 'beep';
+
+var bool = isString( value );
+// returns true
+```
 
 
 ## Examples
 
 ``` javascript
-var foo = require( 'validate.io-string-primitive' );
+var isString = require( 'validate.io-string-primitive' );
+
+console.log( isString( 'beep' ) );
+// returns true
+
+console.log( isString( new String( 'beep' ) ) );
+// returns false
+
+console.log( isString( 5 ) );
+// returns false
 ```
 
 To run the example code from the top-level application directory,

@@ -1,3 +1,12 @@
 'use strict';
 
-var module = require( './../lib' );
+var isString = require( './../lib' );
+
+console.log( isString( 'beep' ) );
+// returns true
+
+console.log( isString( new String( 'beep' ) ) );
+// returns false
+
+console.log( isString( 5 ) );
+// returns false
